@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healthy Bites | Nutritious Recipes</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f8fbf5;color:#26382b;line-height:1.6}
+header{background:#236b45;color:white;padding:20px 8%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+header h1{font-size:28px}
+nav a{color:white;text-decoration:none;margin:10px;font-weight:bold}
+.hero{text-align:center;padding:65px 20px;background:#e2f1d8}
+.hero h2{font-size:38px;color:#236b45}
+.hero p{margin:12px 0 22px}
+.btn{background:#236b45;color:white;padding:12px 22px;border-radius:25px;text-decoration:none;display:inline-block}
+section{padding:40px 8%}
+h2.title{text-align:center;color:#236b45;margin-bottom:25px}
+.categories,.recipes,.tips,.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 4px 12px #0001}
+.card img{width:100%;height:180px;object-fit:cover;display:block}
+.content{padding:18px}
+.content h3{color:#236b45;margin-bottom:8px}
+.content p{margin:6px 0}
+.tag{color:#397a4e;font-weight:bold;font-size:14px}
+.ingredients{padding-left:20px;margin:10px 0}
+.meal{background:#edf6e9;padding:18px;border-radius:12px}
+.tips .card{padding:22px}
+.banner{background:#236b45;color:white;text-align:center;padding:35px 20px}
+footer{text-align:center;background:#193d2a;color:white;padding:22px}
+form{max-width:500px;margin:auto;display:grid;gap:12px}
+input,select,button{padding:12px;border:1px solid #ccc;border-radius:7px;font-size:16px}
+button{background:#236b45;color:white;border:none;cursor:pointer}
+@media(max-width:600px){
+header{justify-content:center;text-align:center;gap:10px}
+header h1{font-size:24px}
+nav a{display:inline-block;margin:5px;font-size:14px}
+.hero h2{font-size:29px}
+section{padding:30px 5%}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🥗 Healthy Bites</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#categories">Categories</a>
+<a href="#recipes">Recipes</a>
+<a href="#plans">Meal Plans</a>
+<a href="#tips">Health Tips</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<h2>Eat Healthy, Live Better!</h2>
+<p>Discover delicious, nutritious recipes for a healthier lifestyle.</p>
+<a href="#recipes" class="btn">Explore Recipes</a>
+</div>
+
+<section id="categories">
+<h2 class="title">Food Categories</h2>
+<div class="categories">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Fresh vegetable salad">
+<div class="content"><h3>🥦 Salads</h3><p>Fresh vegetables and healthy greens.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600" alt="Healthy breakfast bowl">
+<div class="content"><h3>🥣 Breakfast</h3><p>Nutritious meals to start your day.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600" alt="Healthy soup">
+<div class="content"><h3>🍲 Soups</h3><p>Light, comforting and nourishing dishes.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=600" alt="Healthy grain bowl">
+<div class="content"><h3>🌾 Whole Grains</h3><p>Fiber-rich rice, oats and grains.</p></div>
+</div>
+</div>
+</section>
+
+<section id="recipes">
+<h2 class="title">Popular Healthy Recipes</h2>
+<div class="recipes">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Colorful vegetable salad">
+<div class="content">
+<h3>Fresh Veggie Salad</h3>
+<p class="tag">🥗 180 calories | 10 minutes</p>
+<p>A refreshing salad rich in vitamins and fiber.</p>
+<strong>Ingredients:</strong>
+<ul class="ingredients"><li>Lettuce and spinach</li><li>Cucumber and tomato</li><li>Carrot and lemon juice</li><li>Olive oil and pepper</li></ul>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600" alt="Oats and fruit breakfast">
+<div class="content">
+<h3>Fruit & Oats Bowl</h3>
+<p class="tag">🥣 300 calories | 10 minutes</p>
+<p>A filling breakfast with fiber and natural sweetness.</p>
+<strong>Ingredients:</strong>
+<ul class="ingredients"><li>½ cup rolled oats</li><li>1 cup milk</li><li>½ banana</li><li>Apple and nuts</li></ul>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600" alt="Bowl of vegetable soup">
+<div class="content">
+<h3>Vegetable Soup</h3>
+<p class="tag">🍲 150 calories | 25 minutes</p>
+<p>A warm, light dish packed with vegetables.</p>
+<strong>Ingredients:</strong>
+<ul class="ingredients"><li>Carrot and beans</li><li>Chopped tomato</li><li>Onion and garlic</li><li>Water and herbs</li></ul>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=600" alt="Healthy rice and vegetable bowl">
+<div class="content">
+<h3>Brown Rice Bowl</h3>
+<p class="tag">🍚 350 calories | 30 minutes</p>
+<p>A balanced meal with whole grains and vegetables.</p>
+<strong>Ingredients:</strong>
+<ul class="ingredients"><li>1 cup cooked brown rice</li><li>Mixed vegetables</li><li>Cooked chickpeas</li><li>Olive oil and spices</li></ul>
+</div>
+</div>
+
+</div>
+<p style="text-align:center;margin-top:18px;font-size:13px">Calories are approximate and depend on ingredients and portion sizes.</p>
+</section>
+
+<section id="plans">
+<h2 class="title">Daily Healthy Meal Plan</h2>
+<div class="plans">
+<div class="meal"><h3>🌅 Breakfast</h3><p>Oats, banana and milk</p><strong>Approx. 300 kcal</strong></div>
+<div class="meal"><h3>🍎 Mid-Morning</h3><p>One apple and a few nuts</p><strong>Approx. 180 kcal</strong></div>
+<div class="meal"><h3>☀️ Lunch</h3><p>Rice, dal, vegetables and curd</p><strong>Approx. 500 kcal</strong></div>
+<div class="meal"><h3>🌙 Dinner</h3><p>Vegetable soup and whole-grain roti</p><strong>Approx. 350 kcal</strong></div>
+</div>
+<p style="text-align:center;margin-top:18px">Example meal plan only. Individual energy needs vary by age, activity and health.</p>
+</section>
+
+<section id="tips">
+<h2 class="title">Healthy Eating Tips</h2>
+<div class="tips">
+<div class="card"><h3>💧 Stay Hydrated</h3><p>Drink water regularly throughout the day.</p></div>
+<div class="card"><h3>🥬 Eat More Vegetables</h3><p>Include a variety of colorful fruits and vegetables.</p></div>
+<div class="card"><h3>🌾 Choose Whole Grains</h3><p>Try oats, brown rice and whole-wheat foods.</p></div>
+<div class="card"><h3>🍬 Limit Added Sugar</h3><p>Choose balanced meals and reduce sugary drinks.</p></div>
+</div>
+</section>
+
+<div class="banner">
+<h2>Start Your Healthy Journey Today!</h2>
+<p>Small food choices can build healthier habits.</p>
+</div>
+
+<section id="contact">
+<h2 class="title">Get Healthy Recipe Updates</h2>
+<form onsubmit="event.preventDefault();alert('Thank you for subscribing!')">
+<input type="text" placeholder="Enter your name" required>
+<input type="email" placeholder="Enter your email" required>
+<select required>
+<option value="">Choose your favorite category</option>
+<option>Salads</option>
+<option>Breakfast</option>
+<option>Soups</option>
+<option>Whole Grains</option>
+</select>
+<button type="submit">Subscribe</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 Healthy Bites | Eat Fresh, Stay Healthy 🥗</p>
+</footer>
+
+</body>
+</html>
