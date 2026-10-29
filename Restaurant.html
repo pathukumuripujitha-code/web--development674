@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spice Garden Restaurant</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:#fff8f0;color:#333}
+header{background:#8b0000;color:white;text-align:center;padding:25px}
+nav{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:15px}
+nav a{color:white;text-decoration:none}
+section{text-align:center;padding:25px}
+.hero{background:#4a2115;color:white;padding:50px 20px}
+h2{color:#8b0000;margin-bottom:15px}
+.cards{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.card{background:white;width:220px;padding:15px;border-radius:12px;box-shadow:0 3px 10px #ccc}
+img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+button{background:#8b0000;color:white;padding:10px 18px;border:0;border-radius:5px;cursor:pointer}
+input,select{padding:10px;margin:7px;width:90%;max-width:320px}
+footer{background:#351810;color:white;text-align:center;padding:20px}
+</style>
+</head>
+<body>
+<header><h1>🍽 Spice Garden</h1><p>Delicious Food, Beautiful Moments</p>
+<nav><a href="#home">Home</a><a href="#menu">Menu</a><a href="#chefs">Chefs</a><a href="#reviews">Reviews</a><a href="#book">Book Table</a></nav></header>
+<section class="hero" id="home"><h2 style="color:white">Welcome to Spice Garden</h2>
+<p>Experience authentic flavours and unforgettable dining.</p></section>
+<section id="menu"><h2>Our Popular Menu</h2><div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1563379091339-03246963d96a?w=500" alt="Chicken biryani"><h3>Chicken Biryani</h3><p>₹250</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500" alt="Indian curry"><h3>Butter Chicken</h3><p>₹280</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500" alt="Indian samosas"><h3>Veg Snacks</h3><p>₹120</p></div>
+</div></section>
+<section id="chefs"><h2>Meet Our Chefs</h2><div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=500" alt="Head chef"><h3>Chef Arjun</h3><p>Head Chef</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=500" alt="Restaurant chef"><h3>Chef Priya</h3><p>Pastry Chef</p></div>
+</div></section>
+<section><h2>Our Ambience</h2><img style="max-width:500px;height:220px" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="Restaurant interior"></section>
+<section id="reviews"><h2>Customer Reviews</h2><p>⭐⭐⭐⭐⭐ “Amazing food and wonderful service!”</p><p>⭐⭐⭐⭐⭐ “A perfect place for family dinners.”</p></section>
+<section><h2>Opening Hours & Location</h2><p>Mon–Sun: 11 AM – 10 PM</p><p>MG Road, Vijayawada, Andhra Pradesh</p></section>
+<section id="book"><h2>Reserve Your Table</h2><form onsubmit="alert('Reservation request submitted!');return false">
+<input required placeholder="Your Name"><input required type="email" placeholder="Email Address">
+<input required type="date"><select><option>2 Guests</option><option>4 Guests</option><option>6 Guests</option></select>
+<button type="submit">Book Now</button></form></section>
+<footer><p>© 2026 Spice Garden Restaurant | Visit Us Today!</p></footer>
+</body></html>
